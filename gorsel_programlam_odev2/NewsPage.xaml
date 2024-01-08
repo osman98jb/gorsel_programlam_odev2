@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="gorsel_programlam_odev2.NewsPage"
+             Title="Haberler"
+             BackgroundColor="#333">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="realref.png" Text="Refresh" Clicked="OnRefreshButtonClicked"/>
+        <ToolbarItem IconImageSource="share.png" Text="share" Clicked="OnShareButtonClicked"/>
+
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout BackgroundColor="{DynamicResource BackgroundColor}">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Haberler sayfasina hoşgeldinşz" FontSize="20" TextColor="gold" TextTransform="Uppercase" Margin="0,0,0,10" />
+        </StackLayout>
+
+        <Button Text="Son Dakika Haberler" TextColor="Gold" Clicked="OnSonDakikaButtonClicked" BackgroundColor="#1f1f1f" Margin="0,0,0,10" />
+        <Button x:Name="SporButton" Text="Spor" TextColor="Gold" Clicked="OnSporButtonClicked" BackgroundColor="#1f1f1f" Margin="0,0,0,10" />
+        <Button Text="Gündem Haberler" TextColor="Gold" Clicked="OnGundemButtonClicked" BackgroundColor="#1f1f1f" Margin="0,0,0,10" />
+        <Button Text="Ekonomi Haberler" TextColor="Gold" Clicked="OnEkonomiButtonClicked" BackgroundColor="#1f1f1f" Margin="0,0,0,10" />
+        <Button Text="Bilim ve Teknoloji Haberler"  TextColor="Gold" Clicked="OnBilimTeknolojiButtonClicked" BackgroundColor="#1f1f1f" Margin="0,0,0,10" />
+
+    </StackLayout>
+
+</ContentPage>
